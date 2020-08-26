@@ -1,0 +1,350 @@
+.index
+    width: 100%
+.header
+    width: 100%
+    position: absolute
+    padding: 30px 50px
+    display: flex
+    justify-content: space-between
+    z-index: 1000
+    h1
+        a
+            display: block
+            width: 210px
+            height: 28px
+            background: url(../assets/img/logo-04.svg) no-repeat
+            background-size: 210px 28px
+            text-indent: 101%
+            overflow: hidden
+            white-space: nowrap
+            text-decoration: none
+            margin-top: 5px
+    .menu
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        padding-top: 5px
+        li
+            a
+                border: none
+                font-weight: bold
+                display: block
+                letter-spacing: 0.5px
+                text-decoration: none
+                padding: 1px 0
+                margin-bottom: 10px
+                color: $gray
+                background: transparent
+                &:hover
+                    color: rgb(100,100,100)
+                    border-bottom: 1px solid rgb(100,100,100)
+                    margin-bottom: 15px
+                    &:focus
+                        outline: none
+                        &.is-active
+                            color: $black
+                            border-bottom: 1px solid $black
+                            margin-bottom: 10px
+.banner
+    width: 100%
+    position: relative
+    img
+        position: fixed
+        width: 300px
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+    .box
+        position: fixed
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        animation: rotate 5s ease-in-out infinite
+        div
+            position: absolute
+            width: 70px
+            height: 70px
+            opacity: 0.8
+            &.pink
+                top: 0
+                left: 50%
+                transform: translateX(-50%)
+                animation: down 3s cubic-bezier(0, 0.5, 1, 0.5) infinite
+            &.green
+                top: 50%
+                right: 0
+                transform: translateY(-50%)
+                animation: left 3s cubic-bezier(0, 0.5, 1, 0.5) infinite
+            &.orange
+                bottom: 0
+                left: 50%
+                transform: translateX(-50%)
+                animation: up 3s cubic-bezier(0, 0.5, 1, 0.5) infinite
+            &.blue
+                top: 50%
+                left: 0
+                transform: translateY(-50%)
+                animation: right 3s cubic-bezier(0, 0.5, 1, 0.5) infinite
+    .go-down
+        transition: opacity 1s ease-in-out
+        opacity: 0
+        &.show
+            opacity: 1
+        p
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            color: $gray
+            animation: goDown 2s cubic-bezier(0.8, 0.2, 0.2, 0.8) infinite
+        i
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            font-size: 20px
+            color: rgba($gray,0.5)
+            margin-bottom: 15px
+            animation: goDown 2s cubic-bezier(0.8, 0.2, 0.2, 0.8) infinite
+            &:nth-child(2)
+                margin-bottom: 25px
+@keyframes rotate
+    0%
+        transform: rotate(0)
+    40%
+        transform: rotate(180deg)
+    100%
+        transform: rotate(360deg)
+@keyframes down
+    0%
+        top: 0
+    40%
+        top: 50px
+    100%
+        top: 0
+@keyframes left
+    0%
+        right: 0
+    40%
+        right: 50px
+    100%
+        right: 0
+@keyframes up
+    0%
+        bottom: 0
+    40%
+        bottom: 50px
+    100%
+        bottom: 0
+@keyframes right
+    0%
+        left: 0
+    40%
+        left: 50px
+    100%
+        left: 0
+@keyframes goDown
+    0%
+        bottom: 30px
+    40%
+        bottom: 40px
+    100%
+        bottom: 30px
+.content
+    position: relative
+    padding: 0 50px 50px
+    background: rgb(245,245,245)
+    .line
+        align-self: center
+        width: 100%
+        height: 1px
+        background: linear-gradient(to right, $gray 0%, $gray 40%, transparent 40%)
+        background-size: 4px
+    .title
+        font-family: 'Montserrat', "Microsoft JhengHei", "微軟正黑體", sans-serif
+        font-size: 18px
+        font-weight: 700
+        padding: 50px 0 40px
+        text-align: center
+    #about
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-bottom: 50px
+        .resume-link
+            position: relative
+            background: $pink
+            color: rgb(255,255,255)
+            padding: 8px 35px 8px 25px
+            text-decoration: none
+            font-weight: 500
+            border-radius: 20px
+            margin-top: 20px
+            font-size: 13px
+            &::after
+                content: '⇀'
+                position: absolute
+                top: 50%
+                right: 15px
+                transform: translateY(-50%)
+                transition: 0.2s ease-in-out, color 0s
+            &:hover
+                color: rgb(255,255,255)
+                background: $black
+                &::after
+                    right: 10px
+        p
+            font-size: 14px
+            line-height: 2
+            text-align: left
+            text-align: justify
+            padding: 0 70px 10px
+    #skills
+        padding: 0 0 50px
+        .skill
+            display: flex
+            justify-content: space-between
+            > li
+                width: 270px
+                display: flex
+                flex-direction: column
+                align-items: center
+                img
+                    width: 90px
+                    padding-bottom: 15px
+                h4
+                    position: relative
+                    font-size: 17px
+                    letter-spacing: 1px
+                    font-weight: 500
+                    padding-bottom: 15px
+                    margin-bottom: 15px
+                    &::after
+                        content: ''
+                        width: 30px
+                        height: 1px
+                        background: $blue
+                        position: absolute
+                        left: 50%
+                        bottom: 0
+                        transform: translateX(-50%)
+                ul
+                    display: flex
+                    flex-direction: column
+                    padding-bottom: 20px
+                    letter-spacing: 1px
+                    li
+                        font-size: 14px
+                        list-style-type: disc
+                        line-height: 2
+                p
+                    letter-spacing: 0.5px
+                    text-align: center
+                    font-size: 15px
+                    font-weight: 700
+                    line-height: 1.7
+                    padding-bottom: 20px
+                .work-link
+                    position: relative
+                    display: inline-block
+                    background: $blue
+                    color: rgb(255,255,255)
+                    padding: 8px 35px 8px 25px
+                    text-decoration: none
+                    font-weight: 500
+                    font-size: 13px
+                    &:nth-child(1)
+                        border-radius: 20px 0 0 20px
+                        border-right: 1px solid rgb(245,245,245)
+                    &:nth-child(2)
+                        border-radius: 0 20px 20px 0
+                    &::after
+                        content: '⇀'
+                        position: absolute
+                        top: 50%
+                        right: 15px
+                        transform: translateY(-50%)
+                        transition: 0.2s ease-in-out, color 0s
+                    &:hover
+                        color: rgb(255,255,255)
+                        background: $black
+                        &::after
+                            right: 10px
+    #webworks
+        .title
+            padding: 50px 0
+        .list
+            width: 100%
+            display: flex
+            flex-wrap: wrap
+            .item
+                position: relative
+                width: 31%
+                background: rgb(255,255,255)
+                border-radius: 5px
+                border: 1px solid rgba($gray, 0.5)
+                margin-bottom: 30px
+                overflow: hidden
+                transition: opacity 2s ease-in-out
+                opacity: 0
+                &:not(:nth-child(3n))
+                    margin-right: 3.5%
+                &:nth-child(3n)
+                    margin-right: 0
+                &:hover::after
+                    content: ''
+                    position: absolute
+                    bottom: 0
+                    width: 100%
+                    height: 4px
+                    background: linear-gradient(to right, $blue 25%, $green 50%, $orange 75%, $pink)
+                    background-position: 100% 0
+                    animation: gradient 6s infinite
+                a
+                    text-decoration: none
+                    display: flex
+                    flex-direction: column
+                    align-items: flex-start
+                    &:hover
+                        .pic
+                            span
+                                transform: scale(1.1)
+                                transition: 3s ease-in-out
+                    .pic
+                        width: 100%
+                        height: 200px
+                        overflow: hidden
+                        span
+                            display: inline-block
+                            width: 100%
+                            height: 200px
+                            background-position: center
+                            background-size: cover
+                            transition: 1s ease-in-out
+                    h4
+                        padding: 20px
+                        font-size: 15px
+                        color: $black
+                        line-height: 1.4
+                    .text
+                        width: 100%
+                        padding: 0 20px 20px
+                        display: flex
+                        justify-content: space-between
+                        p
+                            color: $dark-gray
+                            font-size: 12px
+                        .fas
+                            padding-right: 5px
+                            color: $gray
+            .add-item
+                width: 31%
+        .more-btn
+            color: $dark-gray
+            &:hover
+                color: $black
+@keyframes gradient
+    0%
+        background-size: 300% 100%
+    50%
+        background-size: 100% 100%
+    100%
+        background-size: 300% 100%

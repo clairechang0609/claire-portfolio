@@ -1,0 +1,56 @@
+.wrap
+    max-width: 1000px
+    position: relative
+    margin: 0 auto
+    overflow: hidden
+.footer
+    color: $dark-gray
+    padding: 50px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    p
+        font-size: 13px
+        font-weight: 200
+    .info
+        display: flex
+        align-items: center
+        li
+            p
+                padding: 0 12px
+            a
+                padding: 0 12px
+                text-decoration: none
+                font-size: 18px
+                color: $gray
+                &:hover
+                    color: $black
+.go-top
+    position: absolute
+    left: 55%
+    transform: translateX(-50%)
+    display: flex
+    flex-direction: column
+    align-items: center
+    font-size: 20px
+    color: $dark-gray
+    cursor: pointer
+    animation: moveTop 2s ease-in-out infinite
+    &:hover
+        color: $black
+        p
+            margin-top: -18px
+    div
+        height: 20px
+        font-size: 12px
+        overflow: hidden
+        p
+            padding: 5px 0 20px
+            transition: 0.3s ease-in-out
+@keyframes moveTop
+    0%
+        bottom: 55px
+    50%
+        bottom: 70px
+    100%
+        bottom: 55px

@@ -1,0 +1,32 @@
+$black: rgb(0,0,0)
+$pink: rgb(225,190,190)
+$blue: rgb(160,180,200)
+$green: rgb(230,225,170)
+$orange: rgb(230,200,180)
+$gray: rgb(150,150,150)
+$dark-gray: rgb(110,110,110)
+
+@mixin hide-text
+    text-indent: 101%
+    overflow: hidden
+    white-space: nowrap
+
+@mixin media-w768
+    @media (max-width: 768px)
+        @content
+
+@mixin media-w667
+    @media (max-width: 667px)
+        @content
+
+@mixin media-w568
+    @media (max-width: 568px)
+        @content
+
+@mixin media-w414
+    @media (max-width: 414px)
+        @content
+
+@mixin media-w375
+    @media (max-width: 375px)
+        @content

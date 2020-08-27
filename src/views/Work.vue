@@ -2,7 +2,7 @@
   <div class="work">
     <div class="title">
       <p>{{ selectWork.date }}</p>
-      <h4>{{ selectWork.title }}</h4>
+      <h4>{{ selectWork.title }}<br>{{ selectWork.titleZh }}</h4>
       <p>— skills —</p>
       <ul class="skill">
         <li v-for="(skill, key) in selectWork.skills" :key="'skill' + key">{{ skill }}</li>
@@ -29,7 +29,8 @@ export default {
       works: [
         {
           id: 'web001',
-          title: 'Hurley Funiture E-commerce Website 電商網站',
+          title: 'Hurley Funiture E-commerce Website',
+          titleZh: '傢俱電商網站',
           skills: [
             '整體版面規劃設計',
             'RESTful API 介接 - 產品上架與管理',
@@ -50,7 +51,8 @@ export default {
           github: 'https://github.com/clairechang0609/Hurley-Furniture'
         }, {
           id: 'web002',
-          title: 'Traits Test Website 心理測驗工具',
+          title: 'Traits Test Website',
+          titleZh: '心理測驗工具',
           skills: [
             '心理測驗 API 介接',
             'Sass 設計整體視覺與互動效果',
@@ -67,7 +69,8 @@ export default {
           github: 'https://github.com/clairechang0609/personality-traits-test'
         }, {
           id: 'web003',
-          title: 'BMI Calculator 身體質量指數計算器',
+          title: 'BMI Calculator',
+          titleZh: '身體質量指數計算器',
           skills: [
             'LocalStorage 資料儲存',
             'Scss 畫面渲染',
@@ -82,7 +85,8 @@ export default {
           github: 'https://github.com/clairechang0609/BMI-calculator'
         }, {
           id: 'web004',
-          title: 'Travel Guide Website 旅遊導覽網站',
+          title: 'Travel Guide Website',
+          titleZh: '旅遊導覽網站',
           skills: [
             'Open Data API 介接',
             'Scss 畫面渲染',
@@ -98,7 +102,8 @@ export default {
           github: 'https://github.com/clairechang0609/JS-travel-guide-website-AJAX'
         }, {
           id: 'web005',
-          title: 'Restaurant Website 西餐廳網站',
+          title: 'Restaurant Website',
+          titleZh: '西餐廳網站',
           skills: [
             'HTML、CSS 網頁渲染',
             'RWD 響應式版型規畫',

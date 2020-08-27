@@ -1,13 +1,9 @@
-$black: rgb(0,0,0)
-$pink: rgb(225,190,190)
-$blue: rgb(160,180,200)
-$green: rgb(230,225,170)
-$orange: rgb(230,200,180)
-$gray: rgb(170,170,170)
-$dark-gray: rgb(120,120,120)
-
 .work
-    padding: 100px 50px 0
+    padding: 120px 50px 0
+    @include media-w667
+        padding: 120px 30px 0
+    @include media-w375
+        padding: 120px 20px 0
     .title
         display: flex
         flex-direction: column
@@ -19,10 +15,11 @@ $dark-gray: rgb(120,120,120)
             padding-top: 10px
             line-height: 2
         h4
-            padding-top: 10px
+            padding: 20px 0 10px
             font-size: 17px
             font-weight: 700
-            line-height: 2
+            line-height: 1.5
+            text-align: center
         .skill
             padding-bottom: 30px
             line-height: 2

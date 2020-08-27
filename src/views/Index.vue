@@ -25,18 +25,18 @@
     <div class="content">
       <div class="line"></div>
       <div id="about">
-        <h3 class="title">ABOUT</h3>
+        <h3 class="title">ABOUT 關於我</h3>
         <p>
-          您好，我叫張庭瑀，有六年的平面設計經驗，主要負責雜誌版型設計與菜單設計，為了精進自我開始學習前端設計與開發，覺得非常的有興趣並持續進修一段時間。喜歡學習新知識並擅於解決問題。
+          您好，我叫張庭瑀，有六年的平面設計經驗，主要負責雜誌版型設計與菜單設計，為了精進自我開始學習前端設計與開發，覺得非常的有興趣並全職進修一段時間。喜歡學習新知識並擅於解決問題。
         </p>
         <p>
           My Name is Claire Chang. I have more than 6 years experience in graphic design, mainly focus on magazine layout and menu design. Beside graphic design, I started learning front-end design and development. And I found myself highly enthusiastic about it. I like to learning new things and solving problems. Thank you for watching.
         </p>
-        <a href="#" class="resume-link">resume link</a>
+        <a href="https://www.cakeresume.com/s--EXBxOhJtA8m2zJUUew0wPg--/claire-chang-e3bd47" class="resume-link" target="_blank">resume link</a>
       </div>
       <div class="line"></div>
       <div id="skills">
-        <h3 class="title">SKILLS</h3>
+        <h3 class="title">SKILLS 技能</h3>
         <ul class="skill">
           <li>
             <img src="../assets/img/skill01.svg" alt="">
@@ -80,7 +80,7 @@
       </div>
       <div class="line"></div>
       <div id="webworks">
-        <h3 class="title">WEB WORKS</h3>
+        <h3 class="title">WEB WORKS 作品介紹</h3>
         <ul class="list">
           <li v-for="work in works" :key="work.id" class="item">
             <router-link :to="`/work/${work.id}`">

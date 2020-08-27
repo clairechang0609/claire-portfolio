@@ -29,8 +29,9 @@ export default {
       works: [
         {
           id: 'web001',
-          title: 'Hurley Funiture Website 電商網站',
+          title: 'Hurley Funiture E-commerce Website 電商網站',
           skills: [
+            '整體版面規劃設計',
             'RESTful API 介接 - 產品上架與管理',
             'Sass 設計整體視覺與互動效果',
             'RWD 響應式版型規畫',

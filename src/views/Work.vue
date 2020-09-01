@@ -8,8 +8,8 @@
         <li v-for="(skill, key) in selectWork.skills" :key="'skill' + key">{{ skill }}</li>
       </ul>
       <div>
-        <a class="work-link" :href="selectWork.demo" target="_blank">Demo</a>
-        <a class="work-link" :href="selectWork.github" target="_blank">Github</a>
+        <a v-if="selectWork.demo" class="work-link" :href="selectWork.demo" target="_blank">Demo</a>
+        <a v-if="selectWork.github" class="work-link" :href="selectWork.github" target="_blank">Github</a>
       </div>
     </div>
     <div class="line"></div>
@@ -64,7 +64,7 @@ export default {
             'https://mir-s3-cdn-cf.behance.net/project_modules/fs/80134c102645107.5f3e42279142e.png',
             'https://mir-s3-cdn-cf.behance.net/project_modules/fs/ba6080102645107.5f3e422791b91.png'
           ],
-          date: 'July. 2020',
+          date: 'Jul. 2020',
           demo: 'https://clairechang0609.github.io/personality-traits-test',
           github: 'https://github.com/clairechang0609/personality-traits-test'
         }, {
@@ -116,6 +116,129 @@ export default {
           date: 'May 2020',
           demo: 'https://clairechang0609.github.io/hex-restaurant',
           github: 'https://github.com/clairechang0609/hex-restaurant'
+        }, {
+          id: 'graphic001',
+          title: 'Japanese Cuisine Menu Design',
+          titleZh: '一花亭日式料理 / 丼飯菜單設計',
+          skills: [
+            'Photoshop 影像處理與合成',
+            'Illustrator 向量繪圖編修',
+            'Indesign 平面排版'
+          ],
+          pics: [
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/dfd65974054567.5c1f9b6e21e75.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/fe25c774054567.5c1f9b6e220ac.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/a9edd074054567.5c1f9b6e210c7.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/38a8bb74054567.5c1f9b6e23590.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/6b57c774054567.5c1f9b6e22847.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/0791ec74054567.5c1f9b6e21bd1.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/58064574054567.5c1f9b6e22e9a.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/c3c06b74054567.5c1f9b6e237e4.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/e5e74a74054567.5c1f9b6e21468.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/98017474054567.5c1f9b6e22607.jpg'
+          ],
+          date: 'Apr. 2016'
+        }, {
+          id: 'graphic002',
+          title: 'Movenpick Café Menu Design',
+          titleZh: '莫凡比咖啡館菜單設計',
+          skills: [
+            'Photoshop 影像處理與合成',
+            'Illustrator 向量繪圖編修',
+            'Indesign 平面排版'
+          ],
+          pics: [
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/638ec074076439.5c20adc55e6a9.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/4f6e6674076439.5c20adc55e01f.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/671a3874076439.5c20adc55ca2d.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/bc43d274076439.5c20adc55d8f0.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/74cd6574076439.5c20adc55e445.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/a8db4074076439.5c20adc55e9f5.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/06261674076439.5c20adc55bf74.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/0f363374076439.5c20adc55c2a0.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/8d225d74076439.5c20adc55d4e8.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/1acc4374076439.5c20adc55cd81.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/13402474076439.5c20adc55ed48.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/db93a374076439.5c20adc55d186.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/7d079374076439.5c20adc55c60c.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/5a1b1374076439.5c20adc55dcd1.jpg'
+          ],
+          date: 'Jun. 2015'
+        }, {
+          id: 'graphic003',
+          title: 'Men’s Fashion Magazine',
+          titleZh: '男性生活雙月刊',
+          skills: [
+            'Photoshop 影像處理與合成',
+            'Illustrator 向量繪圖編修',
+            'Indesign 平面排版'
+          ],
+          pics: [
+            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/7fb83688396149.5dd7715bdb74d.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/82f1ce88396149.5dd7715b7e312.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/daa68188396149.5dd7715b7eab3.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/13d58888396149.5dd7715b7d911.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/6b534688396149.5dd78be71891f.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/d1594688396149.5dd78be717e74.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/dd9b8a88396149.5dd796521fa56.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/07d01188396149.5dd7964faa034.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/5e956c88396149.5dd7964faab49.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/fae18f88396149.5dd79650d5259.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/13a44d88396149.5dd79650d5af8.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/6134b988396149.5dd7afea6730b.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/9c861688396149.5dd7afea67b45.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/3cd14a88396149.5dd78be805606.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/b33c6f88396149.5dd7965056e1f.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/cfaae188396149.5dd79650566a8.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/6b743288396149.5dd79651444fc.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/955bc588396149.5dd7965143df7.jpg'
+          ],
+          date: 'Sep. 2019'
+        }, {
+          id: 'graphic004',
+          title: 'tigertales taiwan inflight magazine',
+          titleZh: '台灣虎航機上旅遊雜誌',
+          skills: [
+            'Photoshop 影像處理與合成',
+            'Illustrator 向量繪圖編修',
+            'Indesign 平面排版'
+          ],
+          pics: [
+            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/8f0a5a76231715.5c63ba1c477c2.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/be217976231715.5c63ba1c46703.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/928f5376231715.5c63ba1c44ffa.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/d2d7e376231715.5c63ba1c45329.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/b94f4876231715.5c63ba1c4588d.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/f71fd576231715.5c63ba1c45b2c.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/c7402876231715.5c63ba1c44d0f.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/122b7f76231715.5c63ba1c46498.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/a0396670137811.5ba277f0879c2.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/a890a870137811.5ba277f088669.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/9a782370137811.5bbf6547a1877.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/2dcf0771599869.5bcab0812889a.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/01e99e71599869.5bcab0812b24c.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/c77d3371599869.5bcab08129455.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/8aadf971599869.5bcab08127baf.jpg'
+          ],
+          date: 'Apr. 2019'
+        }, {
+          id: 'graphic005',
+          title: 'Art & Culture Brochure Design',
+          titleZh: '藝文手冊設計 (英文 / 日文)',
+          skills: [
+            'Photoshop 影像處理與合成',
+            'Illustrator 向量繪圖編修',
+            'Indesign 平面排版'
+          ],
+          pics: [
+            'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/72485874099545.5c21e3ad75e37.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/a0b6c474099545.5c21e3ad768c2.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/23b86d74099545.5c2352d7ed9b5.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/c267d774099545.5c2352d7ed5ec.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/8bbb0374099545.5c2202e6daf80.jpg',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/39fa0b74099545.5c21e3ad76b02.jpg'
+          ],
+          date: 'Nov. 2018'
         }
       ]
     }

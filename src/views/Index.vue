@@ -80,9 +80,27 @@
       </div>
       <div class="line"></div>
       <div id="webworks">
-        <h3 class="title">WEB WORKS 作品介紹</h3>
+        <h3 class="title">WEB WORKS 網頁作品</h3>
         <ul class="list">
           <li v-for="work in works" :key="work.id" class="item">
+            <router-link :to="`/work/${work.id}`">
+              <div class="pic">
+                <span :style="`background-image: url(${work.coverPic})`"></span>
+              </div>
+              <h4>{{ work.title }}</h4>
+              <div class="text">
+                  <p>#{{ work.type }}</p>
+                  <p><i class="fas fa-clock"></i>{{ work.date }}</p>
+              </div>
+            </router-link>
+          </li>
+        </ul>
+      </div>
+      <div class="line"></div>
+      <div id="graphicworks">
+        <h3 class="title">GRAPHIC WORKS 平面作品</h3>
+        <ul class="list">
+          <li v-for="work in graphicWorks" :key="work.id" class="item">
             <router-link :to="`/work/${work.id}`">
               <div class="pic">
                 <span :style="`background-image: url(${work.coverPic})`"></span>
@@ -115,36 +133,68 @@ export default {
           type: 'website',
           title: 'Vue Cli 打造電子商務網站',
           coverPic: 'https://mir-s3-cdn-cf.behance.net/project_modules/fs/3a520d102645107.5f3b7fd8e8c02.png',
-          date: 'Aug. 2020',
-          web: 'https://github.com/clairechang0609/Hurley-Furniture'
+          date: 'Aug. 2020'
         }, {
           id: 'web002',
           type: 'website',
           title: 'API 介接完成心理測驗工具',
           coverPic: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0bb220102645107.5f3b80d40a85d.png',
-          date: 'July. 2020',
-          web: 'https://github.com/clairechang0609/js-week-3-sub-homework'
+          date: 'July. 2020'
         }, {
           id: 'web003',
           type: 'website',
           title: 'LocalStorage 儲存 BMI 資料',
           coverPic: 'https://mir-s3-cdn-cf.behance.net/project_modules/fs/73f376102645107.5f45cac378067.png',
-          date: 'Jun. 2020',
-          web: 'https://github.com/clairechang0609/JS--BMI-calculator'
+          date: 'Jun. 2020'
         }, {
           id: 'web004',
           type: 'website',
           title: 'Open Data API 介接製作旅遊網站',
           coverPic: 'https://mir-s3-cdn-cf.behance.net/project_modules/fs/2e6970102645107.5f3b86ffcff26.png',
-          date: 'Jun. 2020',
-          web: 'https://github.com/clairechang0609/JS-travel-guide-website-AJAX'
+          date: 'Jun. 2020'
         }, {
           id: 'web005',
           type: 'website',
           title: 'RWD 製作響應式餐廳網頁',
           coverPic: 'https://mir-s3-cdn-cf.behance.net/project_modules/fs/c28154102645107.5f3b87ff288e4.png',
-          date: 'May 2020',
-          web: 'https://github.com/clairechang0609/rwd-finalwork.io'
+          date: 'May 2020'
+        }
+      ],
+      graphicWorks: [
+        {
+          id: 'graphic001',
+          type: 'menu',
+          title: 'Japanese Cuisine Menu 日式料理菜單',
+          coverPic: 'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/58064574054567.5c1f9b6e22e9a.jpg',
+          date: 'Apr. 2016'
+        },
+        {
+          id: 'graphic002',
+          type: 'menu',
+          title: 'Movenpick Café Menu 莫凡比咖啡館菜單',
+          coverPic: 'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/4f6e6674076439.5c20adc55e01f.jpg',
+          date: 'Jun. 2015'
+        },
+        {
+          id: 'graphic003',
+          type: 'magazine',
+          title: 'Men’s Fashion Magazine 男性生活雙月刊',
+          coverPic: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/7fb83688396149.5dd7715bdb74d.jpg',
+          date: 'Sep. 2019'
+        },
+        {
+          id: 'graphic004',
+          type: 'magazine',
+          title: 'tigertales taiwan 台灣虎航機上旅遊雜誌',
+          coverPic: 'https://mir-s3-cdn-cf.behance.net/project_modules/fs/be217976231715.5c63ba1c46703.jpg',
+          date: 'Apr. 2019'
+        },
+        {
+          id: 'graphic005',
+          type: 'brochure',
+          title: 'Art & Culture Brochure 藝文手冊設計',
+          coverPic: 'https://mir-s3-cdn-cf.behance.net/projects/404/8a5cf574099545.Y3JvcCw0MDQsMzE2LDAsMA.jpg',
+          date: 'Nov. 2018'
         }
       ]
     }

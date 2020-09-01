@@ -14,18 +14,14 @@
         <li>
           <router-link to="/#webworks">WEB WORKS</router-link>
         </li>
+        <li>
+          <router-link to="/#graphicworks">GRAPHIC WORKS</router-link>
+        </li>
       </ul>
     </div>
     <router-view></router-view>
     <div class="footer">
       <p>© Claire Chang 2020 All Rights Reserved.</p>
-      <!-- <div class="go-top">
-        <i class="fas fa-arrow-up"></i>
-        <div>
-          <p>back to top</p>
-          <p>back to top</p>
-        </div>
-      </div> -->
       <ul class="info">
         <li><p>Contact _</p></li>
         <li>
